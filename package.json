@@ -1,0 +1,12 @@
+{
+  "name": "stream0211",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/chiduocse/stream0211.git",
+  "author": "Chi Duoc SE <chiduocse@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}
