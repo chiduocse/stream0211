@@ -1,13 +1,9 @@
+const playVideo = require('./playVideo');
+
 function openStream() {
     navigator.mediaDevices.getUserMedia({ audio: true, video: true })
-        .then(stream => {
-            const video = document.getElementById('localStream');
-            video.srcObject = stream;
-            video.onloadedmetadata = function () {
-                video.play();
-            }
-        })
+        .then(stream => playVideo(stream, 'localStream'))
         .catch(error => console.log(error));
 }
 
-module.exports= openStream;
+module.exports = openStream;
